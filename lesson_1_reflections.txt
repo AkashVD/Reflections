@@ -1,0 +1,43 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+ It helped me comparing both files and find the bug easy in particular line.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+ It helps in adding some new features,debuging the error in existing file and helps in making it efficient.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+ Pros: It helps in creating a commit per logical change 
+ Cons: When we forget to create a commit for a logical change,then it creates a problem.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+ Because Git allows saving of multiple files in a single repository which are interlinked together, so 
+ saving multiple files in one commit is neccesary because its may affect other files in a repository.
+ While Google Docs doesn't allow multiple files in one repository so they treat each commit as separate file. 
+
+How can you use the commands git log and git diff to view the history of files?
+
+ Typing git log in the repository(astroids) helps in viewing all the commits made along with other informations like
+ IDs(unique for each commit),time, author and name of commit(why it was made made).
+ Then git diff firstcommit_id secondcommit_id helps in finding the difference between the firstcommit and the second
+ commit like how many lines were added and deleted and what changes were made.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+ If something breaks or we find any bug then using version control make it more to find it by going back to previous  
+ versions or commits and can checkout each commit were the bug was introduced and fix it. We can use command like "git checkout ID_of_commit"
+ to go to that commit.But once we commit this then this commit becomes the most recent commit and we cant get the commits which we introduced after 
+ this commit(before this commit was checkout).We cant get them if we have the the Ids of those commit.
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+ I want to work on some projects and commit the versions of it so that it help me debug it and add some new features in future. 
