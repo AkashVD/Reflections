@@ -1,0 +1,8 @@
+What happens when you initialize a repository? Why do you need to do it?
+ When we initialize a repository, a git repository is created and a .git file is also created.
+ Usually the .git file is hidden but we can find it if use "ls -a" command.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+ The working directory is the repository in which the original files are stored.But the staging is a intermediate
+ stage between the working directory and the commit. Before making a commit the files are added to staging area 
+ using "git add file_name" command. The status of directory can be checked using "git status" command. 
