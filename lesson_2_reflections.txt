@@ -1,8 +1,49 @@
 What happens when you initialize a repository? Why do you need to do it?
+
  When we initialize a repository, a git repository is created and a .git file is also created.
  Usually the .git file is hidden but we can find it if use "ls -a" command.
 
+
 How is the staging area different from the working directory and the repository? What value do you think it offers?
+
  The working directory is the repository in which the original files are stored.But the staging is a intermediate
  stage between the working directory and the commit. Before making a commit the files are added to staging area 
  using "git add file_name" command. The status of directory can be checked using "git status" command. 
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+ We can add the chages made in working directory to staging area use a command "git add". Now when we use command
+ "git diff" without any arguement then git compares the working directory and staging area, If we use command 
+ "git diff --staged" then it compares the sstaging area and git repository, If we use command "git diff" with two 
+ arguements then is compares between two commit specified by their IDs in the command. 
+  We can use the staging area to check whelter the changes added are one commit per logical change by first adding 
+  the changes to staging area and then commiting it after that.
+
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+ Whenever we want to add some new feature or anything like experimental changes which we are not sure of that it will work and we also
+ want the earlier version(commit) then we can use branches, to make a branch from master(earlier commit) by using a
+ command called "git branch branch_name". We can checkout the branches using their respective name, same way as we checkout 
+ a commit using its ID.  
+
+
+How do the diagrams help you visualize the branch structure?
+
+ The diagramatic representation of branches helps us lot in understanding the progress of our project. It helps us in
+ viewing the commits made in each branch in a systematic manner and help us know their parent in a easy manner.
+ When we use "git log" it shows us the commits in that particular branch uptill it reaches the parent.But to view 
+ we use "git show commit_id" gives the difference between that commit and its parent.
+  
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+ The result of merging two branches is a new commit which incorporates the changes (commits) made in both the branches.
+ We do this by using the command "git branch branch_1 branch_2 ".We represent it in the diagramatic way because it helps
+ us visulize the structure of repository in a systematic manner. 
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?  
+ 
+ 
